@@ -1,0 +1,18 @@
+{
+    "name": "ihasco/client-api-sdk",
+    "description": "Client API SDK",
+    "require": {
+        "php": ">=5.3.3",
+        "lib-curl": "*"
+    },
+    "require-dev" : {
+        "phpunit/phpunit" : "~4.0",
+        "mockery/mockery": "^0.9.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ihasco": "src/"
+        },
+        "files": ["src/Ihasco/ClientSDK/defines.php"]
+    }
+}
