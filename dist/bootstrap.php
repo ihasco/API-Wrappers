@@ -1,0 +1,22 @@
+<?php
+require_once __DIR__.'/src/Ihasco/ClientSDK/defines.php';
+require_once __DIR__.'/src/Ihasco/Set.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Connectors/Connector.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Connectors/Curl.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Exceptions/Exception.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Exceptions/BadMethod.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Exceptions/CannotAuthenticate.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Exceptions/CannotConnect.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Exceptions/InvalidResource.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Exceptions/NotFoundError.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Exceptions/ServerError.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Exceptions/ValidationError.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Manager.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Resources/Resource.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Resources/Programmes.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Resources/Results.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Resources/Users.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Responses/Programme.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Responses/Response.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Responses/Result.php';
+require_once __DIR__.'/src/Ihasco/ClientSDK/Responses/User.php';

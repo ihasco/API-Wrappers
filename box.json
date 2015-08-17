@@ -1,0 +1,7 @@
+{
+     "directories":["src"],
+     "files":["dist/bootstrap.php"],
+     "main":"dist/bootstrap.php",
+     "map":[{"dist":""}],
+     "output":"dist/clientSDK.phar"
+}
