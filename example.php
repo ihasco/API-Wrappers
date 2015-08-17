@@ -1,10 +1,10 @@
 <?php
 include 'vendor/autoload.php';
 
-$ihasco = $obj = Ihasco\ClientSDK\Manager::create('abc-456');
+$ihasco = Ihasco\ClientSDK\Manager::create('abc-456');
 
 try {
-    $results = $ihasco->programmes->all();
+    $programmes = $ihasco->programmes->all();
 } catch(Ihasco\ClientSDK\Exceptions\CannotConnect $e) {
     // Cannot connect to server
 } catch(Ihasco\ClientSDK\Exceptions\CannotAuthenticate $e) {
@@ -22,7 +22,7 @@ try {
     // something else
 }
 
-var_dump($results->getData()); // array of Ihasco\ClientSDK\Responses\Programme objects
-var_dump($results->hasPagination()); // boolean
-var_dump($results->getNextPage()); // New results object for next page
-var_dump($results->getPrevPage()); // New results object for prev page
+var_dump($programmes->getData()); // array of Ihasco\ClientSDK\Responses\Programme objects
+var_dump($programmes->hasPagination()); // boolean
+var_dump($programmes->getNextPage()); // New programmes object for next page
+var_dump($programmes->getPrevPage()); // New results object for prev page

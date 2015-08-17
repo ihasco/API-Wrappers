@@ -10,7 +10,7 @@ class CurlTest extends \PHPUnit_Framework_TestCase {
     public function testRequestFormation()
     {
         $curl = new Ihasco\ClientSDK\Connectors\Curl('abc','http://requestb.in');
-        $res = $curl->performRequest('PUT','1j83qr81',array("foo"=>"bar"));
+        $res = $curl->performRequest('PUT','tvy3tztv',array("foo"=>"bar"));
         $this->assertEquals('ok',$res);
         $info = $curl->getRequestInfo();
     }

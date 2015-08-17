@@ -118,7 +118,7 @@ class UsersTest extends \PHPUnit_Framework_TestCase {
     public function testDeleteUser($id)
     {
         $users = new Ihasco\ClientSDK\Resources\Users($this->connector);
-        $response = $response = $users->delete($id);
+        $response = $users->delete($id);
         $this->assertEquals($response->getStatusCode(),204);
 
     }
