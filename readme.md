@@ -1,4 +1,4 @@
-# IHASCO Client API SDK
+# iHasco Client API SDK
 
 Create a new instance:
 
