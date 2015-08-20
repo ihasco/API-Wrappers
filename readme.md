@@ -7,7 +7,7 @@ Create a new instance:
 $ihasco = Ihasco\ClientSDK\Manager::create('your-api-key');
 ```
 
-All calls to the API return either a `Ihasco\ClientSDK\Responses\Response` object or throw a `Ihasco\ClientSDK\Exceptions\Exception`. 
+All calls to the API return either a [`Ihasco\ClientSDK\Responses\Response`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/Response.php) object or throw a [`Ihasco\ClientSDK\Exceptions\Exception`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Exceptions/Exception.php). 
 
 ## Programmes
 
@@ -18,7 +18,7 @@ $response = $ihasco->programmes->all();
 $allProgrammes = $response->getData();
 ```
 
-Returns an array of `Ihasco\ClientSDK\Responses\Programme` objects
+Returns an array of [`Ihasco\ClientSDK\Responses\Programme`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/Programme.php) objects
 
 ### One programme
 
@@ -27,7 +27,7 @@ $response = $ihasco->programmes->one(int $programmeId);
 $oneProgramme = $response->getData();
 ```
 
-Returns a single `Ihasco\ClientSDK\Responses\Programme` object
+Returns a single [`Ihasco\ClientSDK\Responses\Programme`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/Programme.php) object
 
 ## Results
 
@@ -38,7 +38,7 @@ $response = $ihasco->results->all();
 $allResults = $response->getData();
 ```
 
-Returns an array of `Ihasco\ClientSDK\Responses\Result` objects
+Returns an array of [`Ihasco\ClientSDK\Responses\Result`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/Result.php) objects
 
 ### One result
 
@@ -47,7 +47,7 @@ $response =  $ihasco->results->one(int $resultId);
 $oneResult = $response->getData();
 ```
 
-Returns a single `Ihasco\ClientSDK\Responses\Result` object
+Returns a single [`Ihasco\ClientSDK\Responses\Result`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/Result.php) object
 
 ## Users
 
@@ -58,7 +58,7 @@ $response = $ihasco->users->all();
 $allUsers = $response->getData();
 ```
 
-Returns an array of `Ihasco\ClientSDK\Responses\User` objects
+Returns an array of [`Ihasco\ClientSDK\Responses\User`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/User.php) objects
 
 ### One user
 
@@ -69,7 +69,7 @@ $response = $ihasco->users->one(mixed $userId);
 $oneUser = $response->getData();
 ```
 
-Returns a single `Ihasco\ClientSDK\Responses\User` object
+Returns a single [`Ihasco\ClientSDK\Responses\User`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/User.php) object
 
 ### User results
 
@@ -78,7 +78,7 @@ $response = $ihasco->users->results(mixed $resultId, int $cursor = null);
 $allResults = $response->getData();
 ```
 
-Returns an array of `Ihasco\ClientSDK\Responses\Result` objects
+Returns an array of [`Ihasco\ClientSDK\Responses\Result`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/Result.php) objects
 
 ### Create user
 
@@ -89,7 +89,7 @@ $response = $ihasco->users->create(array $userData);
 $oneUser = $response->getData();
 ```
 
-Returns a single `Ihasco\ClientSDK\Responses\User` object
+Returns a single [`Ihasco\ClientSDK\Responses\User`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/User.php) object
 
 ### Edit user
 
@@ -100,6 +100,8 @@ $response = $ihasco->users->update(int $userId, array $userData);
 $oneUser = $response->getData();
 ```
 
+Returns a single [`Ihasco\ClientSDK\Responses\User`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Responses/User.php) object
+
 ### Delete a user
 
 ```php
@@ -108,7 +110,7 @@ $response = $users->delete(int $id);
 
 ## Response Exceptions
 
-Anything other than a 2xx response will result in a `Ihasco\ClientSDK\Exceptions\Exception` being thrown. Possible exceptions are as follows:
+Anything other than a 2xx response will result in a [`Ihasco\ClientSDK\Exceptions\Exception`](https://github.com/ihasco/PHP-API-Wrapper/blob/master/src/Ihasco/ClientSDK/Exceptions/Exception.php) being thrown. Possible exceptions are as follows:
 
 ```php
 try {
